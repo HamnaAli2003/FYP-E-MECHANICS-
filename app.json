@@ -1,0 +1,101 @@
+{
+  "expo": {
+    "name": "get-mechanic",
+    "slug": "get-mechanic",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "backgroundColor": "#FFFFFF",
+    "icon": "./assets/logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourapp.bundleidentifier"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "googleMaps": {
+        "apiKey": "AIzaSyYOUR_GOOGLE_MAPS_API_KEY"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/logo.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow E-MECHANIC to use your location."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow E-MECHANIC to access your photos."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow E-MECHANIC to use your camera."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/logo.png",
+          "color": "#FFFFFF",
+          "foregroundService": {
+            "notificationTitle": "E-MECHANIC",
+            "notificationBody": "You have a new notification.",
+            "notificationColor": "#FFFFFF"
+          }
+        }
+      ],
+      [
+        "expo-dev-client",
+        {
+          "ios": {
+            "bundleIdentifier": "com.yourapp.bundleidentifier.dev"
+          },
+          "android": {
+            "package": "com.yourapp.package.dev"
+          }
+        }
+      ],
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "platforms": ["ios", "android", "web"],
+    "extra": {
+      "jazzcash": {
+        "merchantId": "002345234234",
+        "apiKey": "sk_live_YOUR_JAZZCASH_API_KEY",
+        "paymentUrl": "https://sandbox.jazzcash.com.pk/CustomerPortal/"
+      }
+    }
+  }
+}
+
